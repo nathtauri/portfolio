@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbf8f1;
+    color: #2f3a4a;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1 {
+    color: purple;
+}
+header,
+footer {
+    background-color: purple;
+    color: white;
+}
+
+nav a {
+    color: white;
+}
+
+.intro {
+    font-style: italic;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+
+/* ==================================================
+   EXERCICE 3 - COULEURS ET IDENTITÉ VISUELLE
+   ================================================== */
+
+body {
+    background-color: #fbf8f1;
+    color: #2f3a4a;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #7b5ea7;
+    color: white;
+}
+
+h2 {
+    color: #d9480f;
+}
+
+strong {
+    color: #7b5ea7;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ==================================================
+   EXERCICE 4 - MODÈLE DE BOÎTE
+   ================================================== */
+
+header {
+    padding: 16px 24px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    margin-bottom: 20px;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ==================================================
+   EXERCICE 5 - FLEXBOX
+   ================================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+.cartes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.carte {
+    flex: 1 1 150px;
+    background-color: #d0ebff;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+/* ==================================================
+   EXERCICE 6 - TABLEAUX ET FORMULAIRES
+   ================================================== */
+
+/* Tableau */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 8px 12px;
+}
+
+th {
+    background-color: #7b5ea7;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f1e9da;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+/* Formulaire */
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #7b5ea7;
+}
+
+
+/* Bouton */
+
+button {
+    background-color: #7b5ea7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f3a4a;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adaptation aux écrans de 600px maximum */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartes {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+}
